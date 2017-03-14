@@ -23,6 +23,14 @@ private Item[] store =
 };                             
 public int linearSearch(int catNumToFind)
 {
+  for(int i=0; i<store.length; i++)
+  {
+    if (store[i].getCatNum() == catNumToFind)
+    {
+      return store[i].getInventory();
+    }
+  }
+  
   //complete this method
   return -1;
 }
